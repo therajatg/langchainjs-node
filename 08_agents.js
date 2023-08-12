@@ -1,9 +1,13 @@
+//agents are LLM calls which work like a recusive function that is which calls itself over an over again until it gets to a final answer. The LLM uses ReAct (Reason + Act) framework to do this.
+//input is split into thoughts, actions and observations
 import { config } from "dotenv";
 config();
 
 import { ChatOpenAI } from "langchain/chat_models/openai";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { Calculator } from "langchain/tools/calculator";
+
+//initializeAgentExecutorWithOptions => To create an agent
 
 process.env.LANGCHAIN_HANDLER = "langchain";
 const model = new ChatOpenAI({ temperature: 0 });
