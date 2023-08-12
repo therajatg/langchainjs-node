@@ -15,6 +15,9 @@ const prompt = new PromptTemplate({ template, inputVariables: ["question"] });
 //creating new chain
 const chain = new LLMChain({ llm: model, prompt });
 
-//now we will run call on the chain object
+//now we will  run call on the chain object
 const result = await chain.call({ question: "What is the capital of france" });
 console.log(result);
+
+//We can also pass the output we get from this chain to another llm chain and for this we use simple sequential chain.
+//We can also have multiple input variables and for that we use normal sequential chain
