@@ -1,0 +1,2 @@
+1. There are two types of sequential chains: SimpleSequentialChain : The simplest form of sequential chains, where each step has a singular input/output, and the output of one step is the input to the next. SequentialChain : A more general form of sequential chains, allowing for multiple inputs/outputs.
+2. and I think in swquential chain, the order can be anything like the output from the first chain can be used as input in 3rd chain. It's cool.
