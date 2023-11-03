@@ -16,3 +16,5 @@ To run these examples, clone the git repository and run `npm install` to install
 You need to create a `.env` file and add your API Key for OpenAI like this: `OPENAI_API_KEY=sk-...`
 
 This codes utilizes ES6 modules, to allow `import` statements and `async/await` within NodeJS.
+
+//Install this version of faiss-node => "faiss-node": "^0.2.1"
